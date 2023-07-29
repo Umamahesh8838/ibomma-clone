@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+}
+body{
+    background-color: #0f0f0f;
+    color:white;
+
+}
+.navbar{
+    background-color: #151515;
+    height:80px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 0.80rem;
+    font-weight: lighter;
+}
+
+.logo{
+    background-image: url('ibomma-logo.png');
+    background-size: cover;
+    width:150px;
+    height:60px;
+    margin-left:50px;
+}
+.navbar ul li {
+    display:inline;
+    list-style-type: none;
+    color:#6ac045;
+    margin-left:20px;
+    position: relative;
+    top:9px;
+    
+}
+.navbar ul li a{
+    color:white;
+    margin-left:6px;
+}
+.ibomma-search{
+    background-color: #1d1d1d;
+    color:white;
+    margin-left:20px;
+    width:80%;
+    height:30px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius:17px;
+    font-size:17px;
+    border:0.5px solid #333333;
+    outline:none;
+    padding:0 10px;
+    
+
+}
+.navbar .right-nav{
+    display:flex;
+    justify-content: space-around;
+    width:50%;
+    
+}
+.addham{
+    background-color: #6ac045;
+    color:white;
+    border-top-right-radius:17px;
+    border-bottom-right-radius:17px;
+    padding:7px;
+    font-size:1rem;
+    margin-left:-1rem;
+    border:none;
+    outline:none;
+    
+}
+
+/* content top */
+.content-top{
+    margin-left:7%;
+    margin-right:7%;
+    display:flex;
+    height:140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:60px;
+}
+.content-top h1{
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px
+}
+.content-top p{
+    font-size: 15px;
+    margin-bottom:6px; 
+    font-weight: 150;
+}
+.main{
+    margin-top:120px;
+    margin-left:4%;
+    margin-right:4%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    
+}
+.movies{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+/* box */
+.box{
+    margin-left:1px;
+    font-size: 15px;
+    padding:10px;
+}
+.box-img{
+    background-size: cover;
+    height:270px;
+    width:180px;
+    margin-bottom: 9px;
+    border-radius: 6px;
+}
+.movie-name a{
+    color:white;
+    text-decoration: none;
+}
+.movie-name{
+
+    margin-bottom: 6px;
+    font-weight: 400;
+
+}
+.movie-year{
+    color:#5da93c;
+    background-color: #272727;
+    border-radius:6px;
+    font-weight: 600;
+    padding:5px;
+    font-size:14px;
+    width:fit-content;
+}
+
+/* content-bottom */
+
+.content-bottom{
+    margin-top: 30px;
+    margin-left:4%;
+    margin-right:4%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #151515;
+    border-radius: 13px;
+    height: 165px;
+    padding:35px 15px;
+}
+.content-bottom h2{
+    margin-top:90px;
+    margin-bottom:12px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.content-bottom p{
+    margin-bottom: 6px;
+    font-size:10px;
+    font-weight:750;
+}
+.content-bottom .down-search
+{
+    width:700px;
+    margin-bottom: 100px;
+}
+.content-bottom .down-addham{
+    padding:7px 25px;
+}
+.addons{
+    height:100px;
+    margin-left:4%;
+    margin-right:4%;
+    margin-top:30px;
+    
+}
+.wifi{
+    transform: rotateZ(45deg);padding:3px; 
+}
+.addons-head{
+    font-size:20px;
+    font-weight: 500;
+}
+.addons-head img{
+    position: absolute;
+    left:30px;
+    top:1605px;
+}
+
+.down-main{
+    margin-top:1px;
+}
+
+/* footer  */
+footer{
+    display:flex;
+    justify-content: space-between;
+    background-color: #151515;
+    height:70px;
+}
+footer .left-foot{
+    list-style-type: none;
+    display:flex;
+    margin-left:5%;
+}
+footer .left-foot li {
+    margin-left:2px;
+    margin-top:30px;
+    font-size: 12px;
+}
+footer .right-foot{
+    margin-top:30px;
+    font-size: 12px;
+    margin-right:5%;
+}
+.box-img:hover{
+    scale:1.05;
+    transition-property: all;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+}
+.main-tab{
+    margin-left:4%;
+    margin-right:4%;
+    margin-top: 2.5%;
+    display:flex;
+    font-weight: 400;
+}
+.main-tab-image{
+    margin-right:3rem;
+}
+.main-tab-movie-name{
+    margin-top:20px;
+    font-size:40px;
+    font-weight:bolder;   
+}
+.main-tab-movie-year{
+    margin-top:20px;
+    font-weight: 500;
+}
+.main-tab-movie-genre{
+    margin-top: 3px;
+}
+.main-tab-movie-cast{
+    margin-top: 50px;
+}
+.main-tab-movie-director{
+    margin-top: 10px;
+}
+.main-tab-buttons{
+    margin-top:50px;
+    display: flex;
+    
+    outline: none;
+}
+.main-tab-buttons .main-tab-movie-trailer{
+    margin-right:30px;
+    color:white;
+    background-color: #272727;
+    padding:20px;
+    border-radius: 5px;
+    border:none;
+
+
+}
+.main-tab-buttons .main-tab-movie-join{
+    background-color: #5da93c;
+    padding:20px;
+    border-radius:4.4px;
+
+}
+.movie-screen{
+    margin-left:4%;
+    margin-right:4%;
+    margin-top: 2.5%;
+}
+.movie-synopsis{
+    margin-left:4%;
+    margin-right:4%;
+    margin-top: 2.5%;
+    
+}
+
